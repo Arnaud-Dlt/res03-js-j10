@@ -40,6 +40,8 @@ class Enquete
     {
         this.#image = image;
     }
+    
+    
 }
 
 export {Enquete};
