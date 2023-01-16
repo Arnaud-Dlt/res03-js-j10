@@ -1,5 +1,7 @@
+import {Enquete} from "./classes/enquete.js";
+import {EnqueteTest} from "./classes/test.js";
 
-
-window.addEventListener("DOMContentLoaded", function(){
-    let enquete = new Enquete();
-})
+window.addEventListener("DOMContentLoaded", function()
+{
+    
+});
