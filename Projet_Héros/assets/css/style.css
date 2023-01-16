@@ -52,10 +52,6 @@ table {
   border-spacing: 0;
 }
 
-html {
-  font-family: "Cutive", "Montserrat";
-}
-
 @media (max-width: 767px) {
   body header {
     text-align: center;
@@ -115,10 +111,12 @@ html {
   body header {
     text-align: center;
     font-size: 3rem;
-    background-color: #660708;
-    color: #fff;
+    font-weight: 800;
+    color: #000;
     padding: 25px;
     height: 10vh;
+    background: url("https://media.discordapp.net/attachments/1052878765010718771/1064578793680949248/68608434-ruban-jaune-scC3A8ne-de-crime-ligne-de-police-do-not-cross-bande-illustration-de-vecteur-de-style-plat-.png?width=568&height=454");
+    background-size: cover;
   }
   body main {
     display: grid;
@@ -128,23 +126,20 @@ html {
   }
   body main section:first-of-type {
     grid-column: 1/2;
-    background-color: #161A1D;
-    color: #fff;
   }
   body main section:first-of-type h2 {
     font-size: 2rem;
-    color: #fff;
     margin: 5vh 0 5vh 0;
     padding-bottom: 20px;
     border-bottom: 1px solid #161A1D;
   }
   body main section:first-of-type p {
     color: #BA181B;
+    margin: 5px;
   }
   body main section:nth-of-type(2) {
     grid-column: 2/3;
-    background-color: #A4161A;
-    color: #161A1D;
+    border-radius: 20px;
   }
   body main section:nth-of-type(2) h2 {
     text-align: center;
@@ -163,18 +158,16 @@ html {
     padding: 15px;
   }
   body main section:nth-of-type(2) ul li:hover {
-    background-color: #660708;
+    background-color: grey;
   }
   body main section:last-of-type {
     grid-column: 3/4;
     border: 1px solid #000;
-    background-color: #161A1D;
   }
   body main section:last-of-type figure img {
     width: 100%;
   }
   body main button {
-    background-color: #B1A7A6;
     border: none;
     border-radius: 5px;
     padding: 15px;
