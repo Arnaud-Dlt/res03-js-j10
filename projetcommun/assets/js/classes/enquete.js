@@ -2,13 +2,16 @@ class Enquete
 {
     #intro;
     #question;
+    #choix;
     #image;
     
-    constructor(intro, question, image)
+    
+    constructor()
     {
-        this.#intro = intro;
-        this.#question = question;
-        this.#image = image;
+        this.#intro = [];
+        this.#question = [];
+        this.#image = [];
+        this.#choix = [];
     }
     
     get intro ()
@@ -39,6 +42,16 @@ class Enquete
     set image (image)
     {
         this.#image = image;
+    }
+    
+    get choix ()
+    {
+        return this.#choix;
+    }
+    
+    set choix (choix)
+    {
+        this.#choix = choix;
     }
 }
 
