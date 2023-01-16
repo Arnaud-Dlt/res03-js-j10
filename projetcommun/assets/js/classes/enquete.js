@@ -1,16 +1,29 @@
 class Enquete
 {
-    #intro;
-    #question;
-    #choix;
-    #image;
+    #intro = "";
+    #question = "";
+    #image = "";
+    #choix
+    [
+        {
+            text: "",
+            destination{}
+        },
+        {
+            text: "",
+            destination{}
+        },
+        {
+            text:"",
+            destination{}
+        }
+    ];
     
-    
-    constructor()
+    constructor(intro, question, image, choix)
     {
-        this.#intro = [];
-        this.#question = [];
-        this.#image = [];
+        this.#intro = intro;
+        this.#question = question;
+        this.#image = image;
         this.#choix = [];
     }
     
@@ -19,19 +32,9 @@ class Enquete
         return this.#intro;
     }
     
-    set intro (intro)
-    {
-        this.#intro = intro;
-    }
-    
     get question ()
     {
         return this.#question;
-    }
-    
-    set question (question)
-    {
-        this.#question = question;
     }
     
     get image ()
@@ -39,19 +42,49 @@ class Enquete
         return this.#image;
     }
     
-    set image (image)
-    {
-        this.#image = image;
-    }
-    
-    get choix ()
+    get choix()
     {
         return this.#choix;
     }
     
-    set choix (choix)
+    intros()
     {
-        this.#choix = choix;
+        
+    }
+    
+    addIntro()
+    {
+        this.#intro.push()
+    }
+    
+    removeIntro()
+    {
+        
+    }
+    
+    addQuestion()
+    {
+        
+    }
+    
+    removeQuestion()
+    {
+        
+    }
+    
+    addImage()
+    {
+        
+    }
+    
+    removeImage()
+    {
+        
+    }
+    
+    addChoix()
+    {
+        
     }
 }
 

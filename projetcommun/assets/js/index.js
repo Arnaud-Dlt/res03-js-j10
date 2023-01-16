@@ -1,10 +1,7 @@
 import {Enquete} from "./classes/enquete.js";
-import {EnqueteFunction} from "./functions/enqueteFunctions.js";
+import {EnqueteTest} from "./classes/test.js";
 
 window.addEventListener("DOMContentLoaded", function()
 {
-    let scenes = EnqueteFunction();
-    
-    console.log(scenes);
     
 });
