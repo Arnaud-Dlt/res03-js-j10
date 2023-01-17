@@ -75,15 +75,11 @@ class Scenes
     
     displayScene()
     {
-        let intro = document.getElementById("intro");
-        let question = document.getElementById("question");
-        let image = document.getElementById("image");
-        let choix1 = document.getElementById("choix1"); 
-        let choix2 = document.getElementById("choix2");
-        let choix3 = document.getElementById("choix3");
-        
-        intro.textcontent = this.intro;
-        question.textcontent = this.question;
+        function displayIntro(introduction, where = "#section-intro")
+        {
+            let p = document.getElementById("intro");
+            p.getAttribute("dataInvestigation", this.#intro[0]);
+        }
     }
     
 }
