@@ -5,11 +5,6 @@ import {ScenesTest} from "./classes/scenestest.js";
 
 window.addEventListener("DOMContentLoaded", function()
 {
-    let sceneTest = new ScenesTest();
-    sceneTest.test();
-    console.log(sceneTest);
-    
-    let gameTest = new GameTest();
-    gameTest.test1();
-    console.log(gameTest);
+    let scenes = new Scenes(0, this.intro, this.question, "./img/corps.jpg", this.choix);
+    console.log(scenes);
 });

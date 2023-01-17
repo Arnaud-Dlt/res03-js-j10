@@ -24,10 +24,7 @@ class Game
         this.#scene = scene;
     }
     
-    displayScene()
-    {
-        
-    }
+    
 }
 
 export {Game};
