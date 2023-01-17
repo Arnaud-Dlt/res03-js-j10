@@ -17,6 +17,8 @@ let dataInvestigation = [
                 choix2: "Vous analysez tout d’abord la scène de crime afin de trouver des éléments qui pourront vous aider à comprendre ce qu’il s’est passé.",
                 destination: {}
             },
+    
+
             {
                 choix3: "Vous allez à la buvette du mariage prendre une part de gâteau et un café en attendant le rapport des experts.",
                 destination: {}
@@ -146,7 +148,7 @@ let dataInvestigation = [
                 choix2: "",
                 destination: {}
             },
-            {
+            {.
                 choix3: "",
                 destination: {}
             },
