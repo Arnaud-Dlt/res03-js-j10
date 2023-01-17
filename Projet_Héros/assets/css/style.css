@@ -57,53 +57,89 @@ table {
 }
 
 @media (max-width: 767px) {
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    font-family: "Cutive";
+  }
   body header {
     text-align: center;
+    text-transform: uppercase;
     font-size: 3rem;
-    background-color: #660708;
+    font-weight: 800;
+    padding: 25px;
+    height: 10vh;
+    background-image: url("https://www.pngplay.com/wp-content/uploads/5/Police-Tape-Free-PNG.png");
+    background-size: cover;
+  }
+  body header h1 {
+    background-color: rgba(0, 0, 0, 0.5);
   }
   body main {
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
-  }
-  body main section:first-of-type {
-    grid-row: 2/3;
+    grid-template-rows: 10vh 40vh 50vh;
+    height: 100vh;
+    width: 100vw;
     background-color: #161A1D;
-    color: #fff;
+    background-image: url("https://d1fmx1rbmqrxrr.cloudfront.net/zdnet/optim/i/edit/ne/2020/06/US_Police__w630.jpg");
+    background-size: cover;
   }
-  body main section:first-of-type h2 {
-    font-size: 2rem;
-    color: #fff;
-  }
-  body main section:first-of-type p {
-    color: #BA181B;
-  }
-  body main section:nth-of-type(2) {
-    grid-row: 3/4;
-    background-color: #A4161A;
-    color: #161A1D;
-  }
-  body main section:nth-of-type(2) h2 {
+  body main > section:first-of-type {
+    grid-row: 2/3;
+    background-color: rgba(22, 26, 29, 0.7);
     text-align: center;
   }
-  body main section:nth-of-type(2) ul {
+  body main > section:first-of-type h2 {
+    margin: 5vh 0 5vh 0;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+  }
+  body main > section:first-of-type p {
+    color: #fff;
+    margin: 5px;
+    line-height: 1.5rem;
+  }
+  body main > section:first-of-type p span {
+    font-weight: 800;
+    color: #fff;
+    text-decoration: underline #660708;
+  }
+  body main > section:nth-of-type(2) {
+    grid-row: 3/4;
+    background-color: rgba(22, 26, 29, 0.7);
+  }
+  body main > section:nth-of-type(2) h2 {
+    margin: 5vh 0 5vh 0;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+  }
+  body main > section:nth-of-type(2) ul {
     list-style-type: none;
     padding: 0;
-    margin-left: 50px;
+    margin-left: 30px;
+    text-align: center;
   }
-  body main section:last-of-type {
-    grid-row: 1/2;
-    border: 1px solid #000;
-    background-color: #B1A7A6;
-  }
-  body main section:last-of-type figure img {
-    width: 100vw;
-  }
-  body main button {
-    background-color: #B1A7A6;
-    border: none;
-    border-radius: 5px;
+  body main > section:nth-of-type(2) ul li {
     padding: 15px;
+    min-height: 5vh;
+    color: #fff;
+  }
+  body main > section:nth-of-type(2) ul li:hover {
+    background-color: grey;
+  }
+  body main > section:last-of-type {
+    grid-row: 1/2;
+    background-color: rgba(22, 26, 29, 0.7);
+  }
+  body main > section:last-of-type figure img {
+    width: 100%;
   }
 }
 @media (min-width: 768px) {
@@ -111,6 +147,7 @@ table {
     height: 100vh;
     width: 100vw;
     font-family: "Cutive";
+    overflow-y: hidden;
   }
   body header {
     text-align: center;
@@ -133,12 +170,12 @@ table {
     background-image: url("https://d1fmx1rbmqrxrr.cloudfront.net/zdnet/optim/i/edit/ne/2020/06/US_Police__w630.jpg");
     background-size: cover;
   }
-  body main section:first-of-type {
+  body main > section:first-of-type {
     grid-column: 1/2;
     background-color: rgba(22, 26, 29, 0.7);
     text-align: center;
   }
-  body main section:first-of-type h2 {
+  body main > section:first-of-type h2 {
     margin: 5vh 0 5vh 0;
     font-size: 2rem;
     font-weight: 700;
@@ -146,21 +183,21 @@ table {
     border-bottom: 1px solid #fff;
     color: #fff;
   }
-  body main section:first-of-type p {
+  body main > section:first-of-type p {
     color: #fff;
-    margin: 5px;
-    line-height: 1.5rem;
+    margin: 20px;
+    line-height: 2rem;
   }
-  body main section:first-of-type p span {
+  body main > section:first-of-type p span {
     font-weight: 800;
     color: #fff;
     text-decoration: underline #660708;
   }
-  body main section:nth-of-type(2) {
+  body main > section:nth-of-type(2) {
     grid-column: 2/3;
     background-color: rgba(22, 26, 29, 0.7);
   }
-  body main section:nth-of-type(2) h2 {
+  body main > section:nth-of-type(2) h2 {
     margin: 5vh 0 5vh 0;
     font-size: 2rem;
     font-weight: 700;
@@ -169,25 +206,26 @@ table {
     color: #fff;
     text-align: center;
   }
-  body main section:nth-of-type(2) ul {
+  body main > section:nth-of-type(2) ul {
     list-style-type: none;
     padding: 0;
     margin-left: 30px;
     text-align: center;
   }
-  body main section:nth-of-type(2) ul li {
+  body main > section:nth-of-type(2) ul li {
     padding: 15px;
+    margin-top: 8vh;
     min-height: 5vh;
     color: #fff;
   }
-  body main section:nth-of-type(2) ul li:hover {
+  body main > section:nth-of-type(2) ul li:hover {
     background-color: grey;
   }
-  body main section:last-of-type {
+  body main > section:last-of-type {
     grid-column: 3/4;
     background-color: rgba(22, 26, 29, 0.7);
   }
-  body main section:last-of-type figure img {
+  body main > section:last-of-type figure img {
     width: 100%;
   }
 }
