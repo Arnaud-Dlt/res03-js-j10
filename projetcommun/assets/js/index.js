@@ -5,11 +5,12 @@ import {ScenesTest} from "./classes/scenestest.js";
 
 window.addEventListener("DOMContentLoaded", function()
 {
-    let sceneTest = new ScenesTest();
-    sceneTest.test();
-    console.log(sceneTest);
+    let scenesArray = [];
     
-    let gameTest = new GameTest();
-    gameTest.test1();
-    console.log(gameTest);
+    let scene1 = new Scenes();
+    
+    for(let i = 0; i < scenesArray.length; i++)
+    {
+        
+    }
 });

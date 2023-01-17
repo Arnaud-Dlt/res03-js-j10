@@ -5,7 +5,10 @@ window.addEventListener("DOMContentLoaded", function() {
     let choix=document.querySelectorAll("ul li");
     
     for(let i=0;i<choix.length;i++){
-        
+        choix.addEventListener("click", function()
+        {
+            
+        });
     }
     
 });

@@ -9,7 +9,7 @@ class Scenes
     #image; 
     #choix; 
     
-    constructor(id)
+    constructor(id, intro, question, image, choix)
     {
         this.#id = id;
         this.#intro = intro;
@@ -73,6 +73,14 @@ class Scenes
         this.#choix = choix;
     }
     
+    displayScene()
+    {
+        function displayIntro(introduction, where = "#section-intro")
+        {
+            let p = document.getElementById("intro");
+            p.getAttribute("dataInvestigation", this.#intro[0]);
+        }
+    }
     
 }
 
