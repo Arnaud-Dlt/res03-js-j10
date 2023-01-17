@@ -7,15 +7,23 @@ class Scenes
     #intro; 
     #question; 
     #image; 
-    #choix; 
+    #choix1; 
+    #choix2;
+    #choix3;
+    #destination1;
+    #destination2;
     
     constructor(id, intro, question, image, choix)
     {
         this.#id = id;
-        this.#intro = intro;
-        this.#question = question;
-        this.#image = image;
-        this.#choix = [];
+        this.#intro = dataInvestigation[id].intro;
+        this.#question = dataInvestigation[id].question;
+        this.#image = dataInvestigation[id].image;
+        this.#choix1 = dataInvestigation[id].choix[0].choix1;
+        this.#choix2 = dataInvestigation[id].choix[1].choix2;
+        this.#choix3 = dataInvestigation[id].choix[2].choix3;
+        this.#destination1 = dataInvestigation[id].choix[0].destination1;
+        this.#destination2 = dataInvestigation[id].choix[1].destination2;
     }
     
     get id()
@@ -62,24 +70,37 @@ class Scenes
         this.#image = image;
     }
     
-    get choix()
+    get choix1()
     {
         
-        return this.#choix;
+        return this.#choix1;
     }
     
-    set choix(choix)
+    set choix1(choix1)
     {
-        this.#choix = choix;
+        this.#choix1 = choix1;
     }
     
-    displayScene()
+    get choix2()
     {
-        function displayIntro(introduction, where = "#section-intro")
-        {
-            let p = document.getElementById("intro");
-            p.getAttribute("dataInvestigation", this.#intro[0]);
-        }
+        
+        return this.#choix2;
+    }
+    
+    set choix2(choix2)
+    {
+        this.#choix2 = choix2;
+    }
+    
+    get choix3()
+    {
+        
+        return this.#choix3;
+    }
+    
+    set choix3(choix3)
+    {
+        this.#choix3 = choix3;
     }
     
 }

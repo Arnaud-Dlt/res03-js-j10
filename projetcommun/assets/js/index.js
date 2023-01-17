@@ -5,12 +5,16 @@ import {ScenesTest} from "./classes/scenestest.js";
 
 window.addEventListener("DOMContentLoaded", function()
 {
-    let scenesArray = [];
     
-    let scene1 = new Scenes();
+    let beginning = new Game();
+    beginning.start();
     
-    for(let i = 0; i < scenesArray.length; i++)
+    let form = document.getElementById("form");
+    form.addEventListener("submit", function(envent)
     {
-        
-    }
+        event.preventDefault();
+        event.next();
+    });
+    
+    
 });

@@ -10,16 +10,17 @@
              {
 
                  choix1: "Vous les laissez faire et vous vous dirigez vers les invités, qui ont été mis à part dans une salle, pour commencer votre enquête et commencer les premiers interrogatoires",
-                 destination: {}
+                 destination: 1
+                 
 
              },
              {
                  choix2: "Vous analysez tout d’abord la scène de crime afin de trouver des éléments qui pourront vous aider à comprendre ce qu’il s’est passé.",
-                 destination: {}
+                 destination: 2
              },
              {
                  choix3: "Vous allez à la buvette du mariage prendre une part de gâteau et un café en attendant le rapport des experts.",
-                 destination: {}
+                 destination: 3
              },
 
          ]
