@@ -1,6 +1,6 @@
-import { Scenes } from "./classes/scenes.js";
+import { Scenes } from "./scenes.js";
 
-class SceneTest
+class ScenesTest
 {
     
     #test;
@@ -15,7 +15,7 @@ class SceneTest
         let intro = "intro 1"
         let question = "Comment a t-il fait ?"
         let image = "../img/corps.jpg";
-        let choix = [1];
+        let choix = ["lalala"];
         
         this.#test = new Scenes(intro, question, image, choix);
         
@@ -23,7 +23,17 @@ class SceneTest
         console.log(question);
         console.log(image);
         console.log(choix);
+        
+        this.#test.intro = "intro2";
+        this.#test.question = "Il a fait comme ça?";
+        this.#test.image = "../img/empreinte-digitale.png";
+        this.#test.choix = ["bloublou"];
+        
+        console.log(this.#test.intro);
+        console.log(this.#test.question);
+        console.log(this.#test.image);
+        console.log(this.#test.choix);
     }
 }
 
-export { SceneTest };
+export { ScenesTest };

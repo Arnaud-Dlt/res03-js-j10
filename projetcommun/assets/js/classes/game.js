@@ -1,6 +1,6 @@
-import { GameTest } from "./classes/gametest.js";
-import { Scenes } from "./classes/scenes.js";
-import { ScenesTest } from "./classes/scenestest.js";
+import { GameTest } from "./gametest.js";
+import { Scenes } from "./scenes.js";
+import { ScenesTest } from "./scenestest.js";
 
 
 class Game
