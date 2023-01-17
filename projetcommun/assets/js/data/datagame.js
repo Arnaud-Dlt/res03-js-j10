@@ -1,137 +1,137 @@
-let investigation = 
+let dataInvestigation = 
 [
     
     {
-        id = 0;
-        intro = "",
-        question = "",
-        image = "",
-        choix = 
+        id : 0,
+        intro : "",
+        question : "",
+        image : "",
+        choix : 
         [
             
             {
                 
-                choix1 = "",
-                destination = { }
+                choix1 : "",
+                destination : {}
                 
             },
             {
-                choix2 = "",
-                destination = { }
+                choix2 : "",
+                destination : { }
             },
             {
-                choix3 = "",
-                destination = { }
+                choix3 : "",
+                destination : { }
             },
             
         ]
     },
     
     {
-        id = 1;
-        intro = "",
-        question = "",
-        image = "",
-        choix = 
+        id : 1,
+        intro : "",
+        question : "",
+        image : "",
+        choix : 
         [
             
             {
                 
-                choix1 = "",
-                destination = { }
+                choix1 : "",
+                destination : {}
                 
             },
             {
-                choix2 = "",
-                destination = { }
+                choix2 : "",
+                destination : { }
             },
             {
-                choix3 = "",
-                destination = { }
+                choix3 : "",
+                destination : { }
             },
             
         ]
     },
     
     {
-        id = 2;
-        intro = "",
-        question = "",
-        image = "",
-        choix = 
+        id : 2,
+        intro : "",
+        question : "",
+        image : "",
+        choix : 
         [
             
             {
                 
-                choix1 = "",
-                destination = { }
+                choix1 : "",
+                destination : {}
                 
             },
             {
-                choix2 = "",
-                destination = { }
+                choix2 : "",
+                destination : { }
             },
             {
-                choix3 = "",
-                destination = { }
+                choix3 : "",
+                destination : { }
             },
             
         ]
     },
     
     {
-        id = 3;
-        intro = "",
-        question = "",
-        image = "",
-        choix = 
+        id : 3,
+        intro : "",
+        question : "",
+        image : "",
+        choix : 
         [
             
             {
                 
-                choix1 = "",
-                destination = { }
+                choix1 : "",
+                destination : {}
                 
             },
             {
-                choix2 = "",
-                destination = { }
+                choix2 : "",
+                destination : { }
             },
             {
-                choix3 = "",
-                destination = { }
+                choix3 : "",
+                destination : { }
             },
             
         ]
     },
     
     {
-        id = 4;
-        intro = "",
-        question = "",
-        image = "",
-        choix = 
+        id : 4,
+        intro : "",
+        question : "",
+        image : "",
+        choix : 
         [
             
             {
                 
-                choix1 = "",
-                destination = { }
+                choix1 : "",
+                destination : {}
                 
             },
             {
-                choix2 = "",
-                destination = { }
+                choix2 : "",
+                destination : { }
             },
             {
-                choix3 = "",
-                destination = { }
+                choix3 : "",
+                destination : { }
             },
             
         ]
     }
     
-]
+];
 
 
-export { investigation };
+export { dataInvestigation };

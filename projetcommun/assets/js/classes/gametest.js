@@ -1,4 +1,4 @@
-import { Game } from "./classes/game.js";
+import { Game } from "./game.js";
 
 class GameTest
 {
@@ -13,9 +13,13 @@ class GameTest
     {
         let scene = ["Scene 1"];
         
-        this.#scene = new Game(scene);
+        this.#test1 = new Game(scene);
         
-        console.log(this.#scene);
+        console.log(this.#test1.scene);
+        
+        this.#test1 = ["Scene 32"];
+        
+        console.log(this.#test1.scene);
     }
     
 }
