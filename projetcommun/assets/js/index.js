@@ -13,8 +13,7 @@ window.addEventListener("DOMContentLoaded", function()
     form.addEventListener("submit", function(envent)
     {
         event.preventDefault();
-        event.next();
+        Game.next(event);
     });
-    
     
 });

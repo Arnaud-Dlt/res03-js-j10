@@ -37,7 +37,7 @@ class Game
         
         let introductionText = document.createTextNode(scene1.intro);
         let questionText = document.createTextNode(scene1.question);
-        let illustrationImage = firstscene.image;
+        let illustrationImage = scene1.image;
         let choix1Text = document.createTextNode(scene1.choix1);
         let choix2Text = document.createTextNode(scene1.choix2);
         let choix3Text = document.createTextNode(scene1.choix3);
@@ -58,17 +58,20 @@ class Game
     
     next(event)
     {
-        let userChoice = document.querySelector("input[name="userChoice"]");
-            
-        for(let i = 0; i < userChoice.length; i++)
+        let checkedId = event.target.[];
+        
+        let currentScene = new Scene(0);
+        
+        for(let i = 0; i < checkedId.length; i++)
         {
-            if(userChoice.checked === true)
-            {
-                let choiceCheked = userChoice.checked.getAttribute("attr");
-                console.log(choiceCheked);
-                return choiceCheked;
-            }
+            
         }
+        
+        currentScene.display();
+        
+        
+        
+    
     }
 }
 
