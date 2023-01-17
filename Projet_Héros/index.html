@@ -30,28 +30,31 @@
         <h1 class="hidden">Inspector Gadejetteux</h1>
     </header>
     <main>
-        <section>
-            <h2>Résumé...</h2>
-            <p>Vous êtes l’<span>Inspecteur Gadejetteux</span> de la police nationale de Bordeaux. Vous êtes en charge de l’enquête en cours. Il s’agit de la mort d’Olivier Lecomte lors de son mariage avec sa femme Marjorie. Vous arrivez sur la scène de crime 1h après le crime, calepin et stylo à la main.</p>
+        <section id ="section-intro">
+            <h2 id ="titre-intro">Résumé...</h2>
+            <p id ="intro">Vous êtes l’<span>Inspecteur Gadejetteux</span> de la police nationale de Bordeaux. Vous êtes en charge de l’enquête en cours. Il s’agit de la mort d’Olivier Lecomte lors de son mariage avec sa femme Marjorie. Vous arrivez sur la scène de crime 1h après le crime, calepin et stylo à la main.</p>
             </section>
-        <section>
-            <h2>Question ?</h2>
+        <section id = "section-choix">
+            <h2 id="question">Question ?</h2>
+            <form>
             <ul>
-                <li> Choix 1 </li>
-                <li> Choix 2 </li>
-                <li> Choix 3 </li>
+                <li id="choix1"><input type="radio" name="choix"> Choix 1 </li>
+                <li id="choix2"><input type="radio" name="choix"> Choix 2 </li>
+                <li id="choix3"><input type="radio" name="choix"> Choix 3 </li>
             </ul>
+            <button id="confirm">Confirmer</button>
+            </form>
         </section>
-        <section>
+        <section id ="section-image">
             <figure>
-                <img src="" alt="Détective">
+                <img  id="image" src="" alt="Détective">
             </figure>
         </section>
     </main>
     <footer>
 
     </footer>
-    <script src="assets/js/index.js"></script>
+    <script type="module" src="assets/js/index.js"></script>
 </body>
 
 </html>
