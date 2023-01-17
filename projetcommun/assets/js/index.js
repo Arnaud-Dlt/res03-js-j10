@@ -5,6 +5,12 @@ import {ScenesTest} from "./classes/scenestest.js";
 
 window.addEventListener("DOMContentLoaded", function()
 {
-    let scenes = new Scenes(0, this.intro, this.question, "./img/corps.jpg", this.choix);
-    console.log(scenes);
+    let scenesArray = [];
+    
+    let scene1 = new Scenes();
+    
+    for(let i = 0; i < scenesArray.length; i++)
+    {
+        
+    }
 });
